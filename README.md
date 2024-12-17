@@ -124,3 +124,85 @@ FROM heart
 GROUP BY age_group, sex
 ORDER BY age_group;
 ```
+
+## 2. Correlation Between Lifestyle Factors and Heart Disease
+
+**Objective**
+Analyze the correlation between cholesterol, resting blood pressure, and exercise-induced angina in patients with and without heart disease.
+```sql
+-- Look at the columns we will work with
+
+SELECT  restingbp, cholesterol, exerciseangina, heartdisease
+FROM heart;
+
+
+-- Get the average cholesterol and restingbp of patients with and without excercise-induced angina.
+
+SELECT 	
+	ExerciseAngina,
+    HeartDisease,
+    ROUND(AVG(Cholesterol), 2) AS Avg_Cholesterol,
+    ROUND(AVG(RestingBP), 2) AS Avg_RestingBP
+FROM 
+	heart
+GROUP BY 
+	ExerciseAngina, 
+	HeartDisease
+ORDER BY 
+	ExerciseAngina, 
+	HeartDisease;
+
+
+-- Add in age range and sex and compate heart disease cases vs. normal patients.
+
+SELECT
+	CASE 
+		WHEN age BETWEEN 20 AND 29 THEN '20-29'
+		WHEN age BETWEEN 30 AND 39 THEN '30-39'
+		WHEN age BETWEEN 40 AND 49 THEN '40-49'
+		WHEN age BETWEEN 50 AND 59 THEN '50-59'
+		WHEN age >= 60 THEN '60+'
+	END AS age_group,
+	sex,
+	ROUND(AVG(cholesterol), 2) AS avg_cholesterol,
+	ROUND(AVG(restingbp), 2) AS avg_restingbp,
+	ExerciseAngina,
+    HeartDisease
+FROM 
+	heart
+GROUP BY 
+	sex,
+	age_group,
+	ExerciseAngina,
+    HeartDisease
+ORDER BY 
+	age_group;
+
+
+-- To further refine the data we can look for patients with hear disease by adding the WHERE statement
+
+SELECT
+	CASE 
+		WHEN age BETWEEN 20 AND 29 THEN '20-29'
+		WHEN age BETWEEN 30 AND 39 THEN '30-39'
+		WHEN age BETWEEN 40 AND 49 THEN '40-49'
+		WHEN age BETWEEN 50 AND 59 THEN '50-59'
+		WHEN age >= 60 THEN '60+'
+	END AS age_group,
+	sex,
+	ROUND(AVG(cholesterol), 2) AS avg_cholesterol,
+	ROUND(AVG(restingbp), 2) AS avg_restingbp,
+	ExerciseAngina,
+    HeartDisease
+FROM 
+	heart
+WHERE 
+	heartdisease = 1
+GROUP BY 
+	sex,
+	age_group,
+	ExerciseAngina,
+    HeartDisease
+ORDER BY 
+	age_group;
+ ```
