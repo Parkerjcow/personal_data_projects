@@ -16,23 +16,22 @@ Cardiovascular diseases (CVDs) are the leading cause of death worldwide, account
 
 ## Table Structure
 
-We begin by creating the heart table to hold the dataset:
+**We begin by creating the heart table to hold the dataset:**
 
-sql
-Copy code
-CREATE TABLE heart(
-    Age INT,
-    Sex VARCHAR(1),
-    ChestPainType VARCHAR(3),
-    RestingBP INT,
-    Cholesterol INT,
-    FastingBS INT,
-    RestingECG VARCHAR(6),
-    MaxHR INT,
-    ExerciseAngina VARCHAR(1),
-    Oldpeak NUMERIC,
-    ST_Slope VARCHAR(4),
-    HeartDisease INT
+
+create table heart(
+Age int,
+Sex varchar(1),
+ChestPainType varchar(3),
+RestingBP int,
+Cholesterol int,
+FastingBS int,
+RestingECG varchar(6),
+MaxHR int,
+ExerciseAngina varchar(1),
+Oldpeak numeric,
+ST_Slope varchar(4),
+HeartDisease int
 );
 
 ## To verify the table and data:
