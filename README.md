@@ -17,8 +17,8 @@ Cardiovascular diseases (CVDs) are the leading cause of death worldwide, account
 
 **We begin by creating the heart table to hold the dataset:**
 
-
-```CREATE TABLE heart(  
+```sql
+CREATE TABLE heart(  
     Age INT,  
     Sex VARCHAR(1),  
     ChestPainType VARCHAR(3),  
