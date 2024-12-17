@@ -2,7 +2,7 @@
 
 ## Project Overview
 
-This project focuses on analyzing a Heart Health Dataset to derive actionable insights into cardiovascular diseases (CVDs). By using SQL queries, we explore patterns, risk factors, and correlations that help identify high-risk groups and potential indicators of heart disease.
+```This project focuses on analyzing a Heart Health Dataset to derive actionable insights into cardiovascular diseases (CVDs). By using SQL queries, we explore patterns, risk factors, and correlations that help identify high-risk groups and potential indicators of heart disease.
 
 ## Context
 
