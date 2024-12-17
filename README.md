@@ -128,6 +128,7 @@ ORDER BY age_group;
 ## 2. Correlation Between Lifestyle Factors and Heart Disease
 
 **Objective**
+
 Analyze the correlation between cholesterol, resting blood pressure, and exercise-induced angina in patients with and without heart disease.
 ```sql
 -- Look at the columns we will work with
