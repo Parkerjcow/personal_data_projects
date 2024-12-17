@@ -48,7 +48,7 @@ SELECT * FROM heart;
 
 Understand which age and gender groups are at a higher risk of heart disease.
 ```sql
--- Starting off looking at the collumn we will be working with for this query
+-- Starting off looking at the column we will be working with for this query
 
 SELECT age, sex, heartdisease
 FROM heart;
