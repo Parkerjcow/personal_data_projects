@@ -13,3 +13,30 @@ Cardiovascular diseases (CVDs) are the leading cause of death worldwide, account
 - One-third of these deaths occur prematurely in people under the age of 70.
 - Early detection and management of risk factors like hypertension, diabetes, hyperlipidemia, and lifestyle habits are crucial to reducing CVD-related deaths.
 - This dataset contains 11 features that can be used to analyze and predict heart disease. The features include demographics, vital signs, and key lifestyle indicators. Through SQL analysis, we aim to uncover trends and     provide insights to support early detection and management of cardiovascular risks.
+
+## Table Structure
+
+We begin by creating the heart table to hold the dataset:
+
+sql
+Copy code
+CREATE TABLE heart(
+    Age INT,
+    Sex VARCHAR(1),
+    ChestPainType VARCHAR(3),
+    RestingBP INT,
+    Cholesterol INT,
+    FastingBS INT,
+    RestingECG VARCHAR(6),
+    MaxHR INT,
+    ExerciseAngina VARCHAR(1),
+    Oldpeak NUMERIC,
+    ST_Slope VARCHAR(4),
+    HeartDisease INT
+);
+
+## To verify the table and data:
+
+sql
+Copy code
+SELECT * FROM heart;
