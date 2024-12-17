@@ -31,7 +31,8 @@ CREATE TABLE heart(
     Oldpeak NUMERIC,  
     ST_Slope VARCHAR(4),  
     HeartDisease INT  
-);```
+);
+```
 
 ## To verify the table and data:
 
