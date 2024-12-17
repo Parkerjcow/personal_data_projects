@@ -36,6 +36,88 @@ CREATE TABLE heart(
 
 ## To verify the table and data:
 
-sql
-Copy code
 SELECT * FROM heart;
+
+# Business Problems and SQL Solutions
+
+## 1. Predictive Insights: Identifying High-Risk Groups
+
+**Objective**
+
+Understand which age and gender groups are at a higher risk of heart disease.
+
+-- Starting off looking at the collumn we will be working with for this query
+
+SELECT age, sex, heartdisease
+FROM heart;
+
+
+-- Age groups help summarize data into buckets. 
+-- Using CASE statement to create age ranges then create a new collumn called age_group.
+
+SELECT 
+	CASE 
+		WHEN age BETWEEN 20 AND 29 THEN '20-29'
+		WHEN age BETWEEN 30 AND 39 THEN '30-39'
+		WHEN age BETWEEN 40 AND 49 THEN '40-49'
+		WHEN age BETWEEN 50 AND 59 THEN '50-59'
+		WHEN age >= 60 THEN '60+'
+	END AS age_group,
+	age,
+	sex,
+	heartdisease
+FROM heart;
+
+
+-- We count how many patients belong to each age group.
+
+SELECT 
+	CASE 
+		WHEN age BETWEEN 20 AND 29 THEN '20-29'
+		WHEN age BETWEEN 30 AND 39 THEN '30-39'
+		WHEN age BETWEEN 40 AND 49 THEN '40-49'
+		WHEN age BETWEEN 50 AND 59 THEN '50-59'
+		WHEN age >= 60 THEN '60+'
+	END AS age_group,
+	sex,
+	COUNT(*) AS total_patients
+FROM heart
+GROUP BY age_group, sex
+ORDER BY age_group;
+
+
+-- Now we add a count of patients with heart disease
+
+SELECT 
+	CASE 
+		WHEN age BETWEEN 20 AND 29 THEN '20-29'
+		WHEN age BETWEEN 30 AND 39 THEN '30-39'
+		WHEN age BETWEEN 40 AND 49 THEN '40-49'
+		WHEN age BETWEEN 50 AND 59 THEN '50-59'
+		WHEN age >= 60 THEN '60+'
+	END AS age_group,
+	sex,
+	COUNT(*) AS total_patients,
+	SUM(CASE WHEN heartdisease = 1 THEN 1 ELSE 0 END) as patients_with_heart_disease
+FROM heart
+GROUP BY age_group, sex
+ORDER BY age_group;
+
+
+-- Finally we will calculate the percentage of heart diseases
+
+SELECT 
+	CASE 
+		WHEN age BETWEEN 20 AND 29 THEN '20-29'
+		WHEN age BETWEEN 30 AND 39 THEN '30-39'
+		WHEN age BETWEEN 40 AND 49 THEN '40-49'
+		WHEN age BETWEEN 50 AND 59 THEN '50-59'
+		WHEN age >= 60 THEN '60+'
+	END AS age_group,
+	sex,
+	COUNT(*) AS total_patients,
+	SUM(CASE WHEN heartdisease = 1 THEN 1 ELSE 0 END) as patients_with_heart_disease,
+	ROUND((SUM(CASE WHEN HeartDisease = 1 THEN 1 ELSE 0 END)::DECIMAL / COUNT(*)) * 100, 2) AS Heart_Disease_Percentage
+FROM heart
+GROUP BY age_group, sex
+ORDER BY age_group;
