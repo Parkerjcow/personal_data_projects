@@ -35,8 +35,9 @@ CREATE TABLE heart(
 ```
 
 ## To verify the table and data:
-
+```sql
 SELECT * FROM heart;
+```
 ![Table](https://github.com/Parkerjcow/personal_data_projects/blob/Heart-Failure-Predictions/Table.png?raw=true)
 
 # Business Problems and SQL Solutions
@@ -46,7 +47,7 @@ SELECT * FROM heart;
 **Objective**
 
 Understand which age and gender groups are at a higher risk of heart disease.
-
+```sql
 -- Starting off looking at the collumn we will be working with for this query
 
 SELECT age, sex, heartdisease
@@ -122,3 +123,4 @@ SELECT
 FROM heart
 GROUP BY age_group, sex
 ORDER BY age_group;
+```
