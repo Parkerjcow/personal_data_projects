@@ -35,7 +35,7 @@ CREATE TABLE heart(
 
 ## To verify the table and data:
 
-```SELECT * FROM heart;```
+SELECT * FROM heart;
 ![Table](https://github.com/Parkerjcow/personal_data_projects/blob/Heart-Failure-Predictions/Table.png?raw=true)
 
 # Business Problems and SQL Solutions
@@ -48,14 +48,14 @@ Understand which age and gender groups are at a higher risk of heart disease.
 
 -- Starting off looking at the collumn we will be working with for this query
 
-```SELECT age, sex, heartdisease
-FROM heart;```
+SELECT age, sex, heartdisease
+FROM heart;
 
 
 -- Age groups help summarize data into buckets. 
 -- Using CASE statement to create age ranges then create a new column called age_group.
 
-```SELECT 
+SELECT 
 	CASE 
 		WHEN age BETWEEN 20 AND 29 THEN '20-29'
 		WHEN age BETWEEN 30 AND 39 THEN '30-39'
@@ -120,4 +120,4 @@ SELECT
 	ROUND((SUM(CASE WHEN HeartDisease = 1 THEN 1 ELSE 0 END)::DECIMAL / COUNT(*)) * 100, 2) AS Heart_Disease_Percentage
 FROM heart
 GROUP BY age_group, sex
-ORDER BY age_group;```
+ORDER BY age_group;
