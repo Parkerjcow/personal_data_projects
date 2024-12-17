@@ -37,7 +37,7 @@ CREATE TABLE heart(
 ## To verify the table and data:
 
 SELECT * FROM heart;
-!{Table}(https://github.com/Parkerjcow/personal_data_projects/blob/Heart-Failure-Predictions/Table.png?raw=true)
+![Table](https://github.com/Parkerjcow/personal_data_projects/blob/Heart-Failure-Predictions/Table.png?raw=true)
 
 # Business Problems and SQL Solutions
 
