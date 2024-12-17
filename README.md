@@ -124,7 +124,7 @@ FROM heart
 GROUP BY age_group, sex
 ORDER BY age_group;
 ```
-[Business Solution 1 Table](https://github.com/Parkerjcow/personal_data_projects/blob/Heart-Failure-Predictions/Business%20Solution%201%20Table%20.png?raw=true)
+![Business Solution 1 Table](https://github.com/Parkerjcow/personal_data_projects/blob/Heart-Failure-Predictions/Business%20Solution%201%20Table%20.png?raw=true)
 
 ## 2. Correlation Between Lifestyle Factors and Heart Disease
 
