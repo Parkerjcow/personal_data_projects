@@ -285,3 +285,4 @@ FROM
 GROUP BY 
 	ChestPainType;
 ```
+![Business Solution 3 Table](https://github.com/Parkerjcow/personal_data_projects/blob/Heart-Failure-Predictions/Business%20Solution%203%20Table.png?raw=true)
