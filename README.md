@@ -208,3 +208,5 @@ GROUP BY
 ORDER BY 
 	age_group;
  ```
+![Business Solution 2 Table](https://github.com/Parkerjcow/personal_data_projects/blob/Heart-Failure-Predictions/Business%20Solution%202%20Table%20.png?raw=true)
+
