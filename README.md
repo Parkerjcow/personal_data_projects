@@ -211,3 +211,77 @@ ORDER BY
 
 ![Business Solution 2 Table](https://github.com/Parkerjcow/personal_data_projects/blob/Heart-Failure-Predictions/Business%20Solution%202%20Table%20.png?raw=true)
 
+## 3. Chest Pain Type as an Indicator of Heart Disease
+
+**Objective**
+
+Examine if certain chest pain types are stronger indicators of heart disease.
+
+```sql
+-- Check to see how chest pain types are distibuted.
+
+SELECT 
+	chestpaintype,
+	heartdisease
+FROM 
+	heart
+ORDER BY 
+	chestpaintype
+
+
+-- Counting how many total cases of each chest pain type
+
+SELECT
+	chestpaintype,
+	COUNT(*) AS toal_cases
+FROM 
+	heart
+GROUP BY 
+	chestpaintype;
+-- Count the number of heart diseases
+SELECT
+    ChestPainType,
+	COUNT (*) AS total_cases
+FROM 
+	heart
+WHERE 
+	heartdisease = 1
+GROUP BY 
+	ChestPainType;
+
+
+-- We combine the total cases with the amount of heart disease cases.
+
+SELECT
+    ChestPainType,
+	COUNT (*) AS total_cases,
+	SUM(CASE WHEN heartdisease = 1 THEN 1 ELSE 0 END) AS heart_disease_cases
+FROM heart
+GROUP BY ChestPainType;
+
+-- Find the total proportion of heartdisease cases 
+
+SELECT
+    ChestPainType,
+	COUNT (*) AS total_cases,
+	SUM(CASE WHEN heartdisease = 1 THEN 1 ELSE 0 END) AS heart_disease_cases,
+	ROUND((SUM(CASE WHEN heartdisease = 1 THEN 1 ELSE 0 END) * 100) / COUNT(*), 2) as heart_disease_percentage
+FROM 
+	heart
+GROUP BY 
+	ChestPainType;
+
+
+-- Compare patients without heart disease
+
+SELECT
+    ChestPainType,
+	COUNT (*) AS total_cases,
+	SUM(CASE WHEN heartdisease = 1 THEN 1 ELSE 0 END) AS heart_disease_cases,
+	ROUND((SUM(CASE WHEN heartdisease = 1 THEN 1 ELSE 0 END) * 100) / COUNT(*), 2) as heart_disease_percentage,
+	ROUND((SUM(CASE WHEN HeartDisease = 0 THEN 1 ELSE 0 END) * 100) / COUNT(*), 2) AS No_Heart_Disease_Percentage
+FROM 
+	heart
+GROUP BY 
+	ChestPainType;
+```
