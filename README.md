@@ -32,6 +32,11 @@ Younger age groups, such as 20-29, have no cases, contributing 0% of total cases
 - Women of all age ranges on average see a reduced rate of over 50% of heart health issues.
 
 
+## 2. Correlation Between Lifestyle Factors and Heart Disease
+**Findings:**
+ - 
+- 
+
 ## Table Structure
 
 **We begin by creating the heart table to hold the dataset:**
