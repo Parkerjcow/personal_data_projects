@@ -34,11 +34,13 @@ Younger age groups, such as 20-29, have no cases, contributing 0% of total cases
 
 ## 2. Correlation Between Lifestyle Factors and Heart Disease
 **Findings:**
- - Patients with exercise-induced angina and heart disease have significantly higher average cholesterol levels (41.06 mg/dL) and resting blood pressure (1.89 mmHg) compared to patients without heart disease.
- - Average cholesterol levels for heart disease patients: 188.98 mg/dL.
- - Average resting blood pressure for heart disease patients: 124.36 mmHg.
+ - Patients without heart disease and with exercise-induced angina exhibit the highest average cholesterol levels at 227.76 mg/dL and slightly elevated resting blood pressure at 131.56 mmHg compared to heart disease patients.
 
-
+## 3. Chest Pain Type as an Indicator of Heart Disease
+**Findings:**
+ - Asymptomatic Chest Pain (ASY): This chest pain type has the highest percentage of heart disease cases, with 79% of patients diagnosed with heart disease.
+ - Typical Angina (TA): 43% of patients with this chest pain type have heart disease, indicating a moderate correlation with heart disease.
+ - Atypical Angina (ATA): Patients with this chest pain type have the lowest correlation with heart disease, with only 13% of cases diagnosed as heart disease, and 86% without heart disease.
 
 ## Table Structure
 
