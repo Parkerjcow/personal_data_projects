@@ -34,8 +34,11 @@ Younger age groups, such as 20-29, have no cases, contributing 0% of total cases
 
 ## 2. Correlation Between Lifestyle Factors and Heart Disease
 **Findings:**
- - 
-- 
+ - Patients with exercise-induced angina and heart disease have significantly higher average cholesterol levels (41.06 mg/dL) and resting blood pressure (1.89 mmHg) compared to patients without heart disease.
+ - Average cholesterol levels for heart disease patients: 188.98 mg/dL.
+ - Average resting blood pressure for heart disease patients: 124.36 mmHg.
+
+
 
 ## Table Structure
 
