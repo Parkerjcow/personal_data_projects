@@ -10,16 +10,17 @@ This project focuses on analyzing a Heart Health Dataset to derive actionable in
 - **Purpose:** Help healthcare providers target at-risk demographics for preventative care and early intervention.
 Correlation Between Lifestyle Factors and Heart Disease
 
-Goal: Examine how factors such as cholesterol, resting blood pressure, and exercise-induced angina correlate with heart disease outcomes.
-Purpose: Provide insights into lifestyle or physiological factors contributing to heart disease risk, enabling data-driven public health strategies.
-Chest Pain Type as an Indicator of Heart Disease
+### 2. Correlation Between Lifestyle Factors and Heart Disease
+- **Goal:** Examine how factors such as cholesterol, resting blood pressure, and exercise-induced angina correlate with heart disease outcomes.
+- **Purpose:** Provide insights into lifestyle or physiological factors contributing to heart disease risk, enabling data-driven public health strategies.
 
-Goal: Analyze the distribution of chest pain types and their association with heart disease.
-Purpose: Determine whether specific chest pain types can be used as diagnostic indicators for heart disease.
-Threshold Analysis for Risk Factors
+### 3. Chest Pain Type as an Indicator of Heart Disease
+- **Goal:** Analyze the distribution of chest pain types and their association with heart disease.
+- **Purpose:** Determine whether specific chest pain types can be used as diagnostic indicators for heart disease.
 
-Goal: Identify critical thresholds for cholesterol, blood pressure, and maximum heart rate (MaxHR) that are most commonly associated with heart disease.
-Purpose: Establish actionable metrics for healthcare professionals to monitor and manage heart health effectively.
+### 4. Threshold Analysis for Risk Factors
+- **Goal:** Identify critical thresholds for cholesterol, blood pressure, and maximum heart rate (MaxHR) that are most commonly associated with heart disease.
+- **Purpose:** Establish actionable metrics for healthcare professionals to monitor and manage heart health effectively.
 
 ## Context
 
