@@ -23,17 +23,14 @@ Correlation Between Lifestyle Factors and Heart Disease
 - **Purpose:** Establish actionable metrics for healthcare professionals to monitor and manage heart health effectively.
 
 
-# Key Insights
+## Key Insights
 
 ## 1. Predictive Insights: Identifying High-Risk Groups
  - **Findings:**
 
-  - Age Group Analysis:
-   - The age group 50-59 shows the highest percentage of heart disease cases at X%, followed closely by those aged 60+.
-Younger age groups, such as 20-29, have significantly fewer cases, contributing to only Y% of total cases.
-
- - **Gender Analysis:**
-Male patients show a higher prevalence of heart disease (Z%) compared to female patients (W%).
+ ** - Age Group Analysis:**
+   - The age group 60+ shows the highest percentage of heart disease cases at 80.79% (Male) and 42% (Female), followed closely by those aged 50-59 Males at 63.58%+.
+Younger age groups, such as 20-29, have no cases, contributing 0% of total cases.
 
 
 ## Table Structure
