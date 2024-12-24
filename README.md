@@ -5,7 +5,7 @@ This project focuses on analyzing a Heart Health Dataset to derive actionable in
 
 # Business Problems:
 
-**1. Predictive Insights: Identifying High-Risk Groups**
+## 1. Predictive Insights: Identifying High-Risk Groups
 - **Goal:** Analyze age and sex to identify groups with the highest prevalence of heart disease.
 - **Purpose:** Help healthcare providers target at-risk demographics for preventative care and early intervention.
 Correlation Between Lifestyle Factors and Heart Disease
