@@ -22,23 +22,13 @@ Correlation Between Lifestyle Factors and Heart Disease
 - **Goal:** Identify critical thresholds for cholesterol, blood pressure, and maximum heart rate (MaxHR) that are most commonly associated with heart disease.
 - **Purpose:** Establish actionable metrics for healthcare professionals to monitor and manage heart health effectively.
 
-## Context
-
-Cardiovascular diseases (CVDs) are the leading cause of death worldwide, accounting for 31% of all deaths (approximately 17.9 million lives each year).
-
-## Key Facts:
-- Four out of five CVD deaths are caused by heart attacks and strokes.
-- One-third of these deaths occur prematurely in people under the age of 70.
-- Early detection and management of risk factors like hypertension, diabetes, hyperlipidemia, and lifestyle habits are crucial to reducing CVD-related deaths.
-- This dataset contains 11 features that can be used to analyze and predict heart disease. The features include demographics, vital signs, and key lifestyle indicators. Through SQL analysis, we aim to uncover trends and     provide insights to support early detection and management of cardiovascular risks.
-
 
 # Key Insights
 
 ## 1. Predictive Insights: Identifying High-Risk Groups
  - **Findings:**
 
-  - Age Group Analysis:**
+  - Age Group Analysis:
    - The age group 50-59 shows the highest percentage of heart disease cases at X%, followed closely by those aged 60+.
 Younger age groups, such as 20-29, have significantly fewer cases, contributing to only Y% of total cases.
 
