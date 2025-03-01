@@ -44,10 +44,12 @@ FROM credit_risk;
 - 21.81% of borrowers defaulted on their loans.
 - While this isn't an extreme default rate, 1 in 5 loans is still a significant risk for lenders.
 - The default percentage gives lenders a baseline to assess how risky their loan portfolio is.
+- 
 ### Business Actions
-✔ Financial institutions should ensure they have strong risk management strategies in place.
-✔ Consider increasing interest rates or collateral requirements for higher-risk borrowers.
-✔ Further investigate which specific borrower characteristics are driving defaults.
+
+- Financial institutions should ensure they have strong risk management strategies in place.
+- Consider increasing interest rates or collateral requirements for higher-risk borrowers.
+- Further investigate which specific borrower characteristics are driving defaults.
 ---
 ### **2️⃣ How do credit scores correlate with default rates?**
 **Why This Matters:** If lower credit scores = higher default rates, lenders can adjust loan terms accordingly 
