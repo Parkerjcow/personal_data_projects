@@ -16,8 +16,8 @@ Using PostgreSQL, we break down key **borrower behaviors**, **income levels**, *
 📌 **Data Source:** [Credit Risk Dataset](https://www.kaggle.com/datasets/laotse/credit-risk-dataset)
 
 # **Business Questions & Analysis Approach**
+
 We’ve divided this analysis into **three main sections**—each tackling critical questions that financial institutions and lenders would care about.  
----
 
 
 ## **📌 Section 1: Credit Risk & Loan Performance**
