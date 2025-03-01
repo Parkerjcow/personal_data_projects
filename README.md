@@ -38,6 +38,7 @@ SELECT
     ROUND((COUNT(*) FILTER (WHERE loan_status =1) * 100.0 / COUNT(*)), 2) AS default_rate
 FROM credit_risk;
 ```
+![What percentage of applicants default on their loans](https://github.com/Parkerjcow/personal_data_projects/blob/Credit-Risk-Analysis/tables/1%20-%20What%20percentage%20of%20applicants%20default%20on%20their%20loans.png?raw=true)
 ---
 ### **2️⃣ How do credit scores correlate with default rates?**
 **Why This Matters:** If lower credit scores = higher default rates, lenders can adjust loan terms accordingly 
