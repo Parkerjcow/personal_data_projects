@@ -125,7 +125,19 @@ GROUP BY income_group
 ORDER BY total_borrowers DESC;
 ```
 ![Which income groups are more likely to default](https://github.com/Parkerjcow/personal_data_projects/blob/Credit-Risk-Analysis/tables/4%20-%20Which%20income%20groups%20are%20more%20likely%20to%20default.png?raw=true)
+## Insights
+- Low-income borrowers (<$40K) have the highest default rate (39.71%).
+- Default rates drop significantly for higher income groups:
+ - Middle Income (40K-80K): 18.60%
+ - Upper Middle Income (80K-120K): 9.43%
+ - High Income (120K+): 8.36%
+  
+### Business Actions
+- Low-income borrowers pose the highest risk – lenders should either offer lower loan amounts or require stricter credit checks.
+- Higher-income borrowers could be offered premium financial products with lower interest rates due to their lower risk.
+- Consider alternative repayment structures (graduated repayment) for lower-income groups.
 ---
+
 ### **5️⃣ How does employment status impact loan repayment?**
 **Why This Matters:** Does having a stable job reduce the chances of default? Let’s check.
 ```sql
@@ -146,7 +158,19 @@ GROUP BY employment_status
 ORDER BY total_borrowers DESC;
 ```
 ![How does employment length impact loan repayment](https://github.com/Parkerjcow/personal_data_projects/blob/Credit-Risk-Analysis/tables/5%20-%20How%20does%20employment%20length%20impact%20loan%20repayment.png?raw=true)
-
+## Insights
+- Unemployed borrowers have the highest default rate (28.58%).
+- Borrowers with short-term employment (1-2 years) default at 26.51%, meaning job stability plays a key role in repayment.
+- Default rates decrease steadily for borrowers with longer employment histories:
+ - Moderate Employment (3-5 years): 19.99%
+ - Stable Employment (6-10 years): 18.07%
+ - Long-Term Employment (10+ years): 16.23%
+  
+### Business Actions
+- Lenders should avoid giving high loan amounts to unemployed or short-term employed individuals without additional guarantees.
+- Consider offering better interest rates for borrowers with longer, more stable employment.
+- Financial institutions should target stable borrowers (6+ years employment) for premium loan offers.
+  
 ## **📌 Section 3: What Are the Most Common Risk Factors for Default?**
 ### **6️⃣ How Does Credit History Length Impact Default Rates?**
 **Why This Matters:** A borrower's credit history length **could be a key indicator of financial responsibility**. But is a short credit history **always riskier**? Let’s find out.  
@@ -166,6 +190,16 @@ GROUP BY credit_history_group
 ORDER BY default_rate DESC;
 ```
 ![How Does Credit History Length Impact Default Rates](https://github.com/Parkerjcow/personal_data_projects/blob/Credit-Risk-Analysis/tables/6%20-%20How%20Does%20Credit%20History%20Length%20Impact%20Default%20Rates.png?raw=true)
+
+## Insights
+- Borrowers with short credit history (0-4 years) default the most (22.72%).
+- Moderate (5-9 years) and long credit history (10+ years) have similar default rates (~20.71%).
+  
+### Business Actions
+- Short credit history borrowers need additional screening – consider requiring co-signers or collateral for large loans.
+- Rather than just looking at credit history length, analyze past default behavior for a more complete risk profile.
+- Credit-building programs could be introduced to help short-history borrowers build financial trust.
+  
 ---
 ### **7️⃣ Does Having a Past Default Increase Default Risk?**
 **Why This Matters:** If a borrower has defaulted before, should a lender trust them with another loan? Does past behavior predict future financial habits?
@@ -181,6 +215,17 @@ GROUP BY past_default
 ORDER BY default_rate DESC;
 ```
 ![Does Having a Past Default Increase Default Risk](https://github.com/Parkerjcow/personal_data_projects/blob/Credit-Risk-Analysis/tables/7%20-%20Does%20Having%20a%20Past%20Default%20Increase%20Default%20Risk.png?raw=true)
+
+## Insights
+- Past defaulters have a 37.81% default rate, double the risk of non-defaulters (18.39%).
+- Even though past defaulters only make up 17.6% of borrowers, they account for nearly 30% of all defaults.
+  
+### Business Actions
+- Past defaulters should undergo stricter approval processes – consider requiring higher credit scores or collateral.
+- Lenders should closely monitor past defaulters and implement risk-mitigation strategies (e.g., lower loan amounts).
+- Consider offering financial literacy or counseling programs to past defaulters to reduce future risk.
+
+
 ---
 ### **8️⃣ Do High Interest Rates Lead to More Defaults?**
 **Why This Matters:** If higher interest rates lead to higher default rates, lenders might need to rethink their pricing models. Let's analyze if there's a strong correlation.
@@ -200,15 +245,31 @@ GROUP BY interest_rate_group
 ORDER BY default_rate DESC;
 ```
 ![Do High Interest Rates Lead to More Defaults](https://github.com/Parkerjcow/personal_data_projects/blob/Credit-Risk-Analysis/tables/8%20-%20Do%20High%20Interest%20Rates%20Lead%20to%20More%20Defaults.png?raw=true)
+## Insights
+- Borrowers with high-interest loans (15%+) default at an alarming rate of 58.01%.
+- Medium Interest (10-15%) loans have a 22.20% default rate, which is much lower.
+- Low-interest loans (<10%) default the least (12.91%), suggesting that affordability plays a major role in loan repayment.
+  
+### Business Actions
+- High-interest borrowers are at extreme risk of default – lenders should reassess risk-based pricing strategies.
+- If possible, offering slightly lower interest rates to high-risk borrowers may reduce defaults and improve long-term repayment.
+- Consider refinancing options or offering lower interest rates to financially stable borrowers who initially took high-interest loans.
+
 ---
 
-## 🎯 Final Takeaways
-### 🔥 So, Who Defaults and Why?
+## 🎯 Final Takeaways - So, Who Defaults and Why?
 This project has revealed critical insights that financial institutions can use to improve credit risk assessment and loan approval strategies.
 
-✅ Key Risk Factors for Loan Defaults:
-- Short credit history (0-4 years) is riskier than longer histories.
-- Past defaults strongly predict future defaults.
-- High-interest loans (15%+) default at alarming rates (58%).
+- Key Risk Factors for Loan Defaults:
+Short credit history borrowers default the most (22.72%) – lenders need better screening.
+- Past defaults = 2x higher chance of defaulting again (37.81%) – stricter approval needed.
+- High-interest loans (15%+) default at 58.01% – lenders should reconsider pricing models.
+- Low-income borrowers default the most (39.71%), showing financial strain.
+- Stable employment (6+ years) significantly reduces default risk.
+
+## Business Recommendations:
+- Implement stricter loan approval processes for high-risk borrowers (low income, past defaults, short credit history).
+- Offer better loan terms to stable borrowers (low-risk customers).
+- Consider alternative repayment models to reduce defaults, such as graduated payment plans.
 
 
