@@ -13,32 +13,6 @@ We analyze **borrower behavior**, **credit history**, **income levels**, and **i
 
 ---
 
-## 📌 Key Business Insights
-
-### **📊 1. How Does Credit History Length Impact Default Rates?**
-#### 🔍 Findings:
-- **Borrowers with short credit history (0-4 years) have the highest default rate (22.72%).**  
-- **Moderate (5-9 years) and Long-Term (10+ years) credit borrowers default at similar rates (~20.7%).**  
-- **Business Takeaway:** Credit history alone **isn’t a perfect risk indicator**—lenders should assess other factors like past defaults.  
-
----
-
-### **📊 2. Does Having a Past Default Increase Default Risk?**
-#### 🔍 Findings:
-- **Borrowers who have defaulted before are twice as likely to default again (37.81% vs. 18.39%).**  
-- **Past defaulters make up only 17% of borrowers but contribute nearly 30% of all defaults.**  
-- **Business Takeaway:** Past defaults **are a major risk factor**—lenders should enforce stricter loan conditions for repeat defaulters.  
-
----
-
-### **📊 3. Do High Interest Rates Lead to More Defaults?**
-#### 🔍 Findings:
-- **High-interest loans (15%+) default at a shocking rate of 58.01%!**  
-- **Default rates decrease as interest rates lower—22.20% (10-15%) and 12.91% (<10%).**  
-- **Business Takeaway:** Lenders may need to **reassess risk policies for high-interest loans** and explore **alternative credit models**.  
-
----
-
 ## 📌 SQL Table Structure
 We begin by creating the **credit risk analysis table** to hold the dataset:
 
@@ -57,3 +31,31 @@ CREATE TABLE credit_risk (
     cb_person_default_on_file VARCHAR(1),
     cb_person_cred_hist_length INT
 );
+```
+# **Business Questions & Analysis Approach**
+The project is divided into three main sections, each addressing key business concerns.
+
+---
+
+## **📌 Section 1: Credit Risk & Loan Performance**
+### **1️⃣ What percentage of applicants default on their loans?**
+🔹 **SQL Query:** Calculate total loans vs. defaulted loans.  
+🔹 **Tableau:** KPI Card + Default Rate Trend Analysis.  
+
+```sql
+-- Find total number of loans
+SELECT COUNT(*) AS total_loans FROM credit_risk;
+
+-- Find total defaulted loans
+SELECT COUNT(*) AS total_default_loans FROM credit_risk WHERE loan_status = 1;
+
+-- Compute default rate
+SELECT 
+    COUNT(*) AS total_loans,
+    COUNT(*) FILTER (WHERE loan_status = 1) AS total_defaults,
+    ROUND((COUNT(*) FILTER (WHERE loan_status =1) * 100.0 / COUNT(*)), 2) AS default_rate
+FROM credit_risk;
+```
+
+
+
