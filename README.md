@@ -15,7 +15,7 @@ We analyze **borrower behavior**, **credit history**, **income levels**, and **i
 ✅ Are high-interest loans more likely to default?  
 
 **📌 Tools Used:** PostgreSQL (PGAdmin4), SQL  
-**📌 Data Source:** [Credit Risk Dataset] *(https://www.kaggle.com/datasets/laotse/credit-risk-dataset)*
+**📌 Data Source:** [Credit Risk Dataset]*(https://www.kaggle.com/datasets/laotse/credit-risk-dataset)*
 
 ---
 
