@@ -58,6 +58,7 @@ FROM credit_risk
 GROUP BY credit_history_group
 ORDER BY credit_history_group;
 ```
+![How do credit scores correlate with default rates](https://github.com/Parkerjcow/personal_data_projects/blob/Credit-Risk-Analysis/tables/2-%20How%20do%20credit%20scores%20correlate%20with%20default%20rates.png?raw=true)
 ---
 ### **3️⃣ What loan types have the highest and lowest default rates?**
 **Why This Matters:** Some loan types are riskier than others. Knowing which ones have higher default rates can help in setting better loan policies.
@@ -71,9 +72,9 @@ SELECT
 FROM credit_risk
 GROUP BY loan_intent
 ORDER BY default_rate DESC;
-
+![How do credit scores correlate with default rates](https://github.com/Parkerjcow/personal_data_projects/blob/Credit-Risk-Analysis/tables/2-%20How%20do%20credit%20scores%20correlate%20with%20default%20rates.png?raw=true)
 ```
-
+![What loan types have the highest and lowest default rates](https://github.com/Parkerjcow/personal_data_projects/blob/Credit-Risk-Analysis/tables/3%20-%20What%20loan%20types%20have%20the%20highest%20and%20lowest%20default%20rates.png?raw=true)
 
 ## **📌 Section 2: Customer Demographics & Risk Assessment**
 ### **4️⃣ Which income groups are more likely to default?**
@@ -94,6 +95,7 @@ FROM credit_risk
 GROUP BY income_group
 ORDER BY total_borrowers DESC;
 ```
+![Which income groups are more likely to default](https://github.com/Parkerjcow/personal_data_projects/blob/Credit-Risk-Analysis/tables/4%20-%20Which%20income%20groups%20are%20more%20likely%20to%20default.png?raw=true)
 ---
 ### **5️⃣ How does employment status impact loan repayment?**
 **Why This Matters:** Does having a stable job reduce the chances of default? Let’s check.
@@ -114,7 +116,7 @@ FROM credit_risk
 GROUP BY employment_status
 ORDER BY total_borrowers DESC;
 ```
-
+![How does employment length impact loan repayment](https://github.com/Parkerjcow/personal_data_projects/blob/Credit-Risk-Analysis/tables/5%20-%20How%20does%20employment%20length%20impact%20loan%20repayment.png?raw=true)
 
 ## **📌 Section 3: What Are the Most Common Risk Factors for Default?**
 ### **6️⃣ How Does Credit History Length Impact Default Rates?**
@@ -134,6 +136,7 @@ FROM credit_risk
 GROUP BY credit_history_group
 ORDER BY default_rate DESC;
 ```
+![How Does Credit History Length Impact Default Rates](https://github.com/Parkerjcow/personal_data_projects/blob/Credit-Risk-Analysis/tables/6%20-%20How%20Does%20Credit%20History%20Length%20Impact%20Default%20Rates.png?raw=true)
 ---
 ### **7️⃣ Does Having a Past Default Increase Default Risk?**
 **Why This Matters:** If a borrower has defaulted before, should a lender trust them with another loan? Does past behavior predict future financial habits?
@@ -148,6 +151,7 @@ FROM credit_risk
 GROUP BY past_default
 ORDER BY default_rate DESC;
 ```
+![Does Having a Past Default Increase Default Risk](https://github.com/Parkerjcow/personal_data_projects/blob/Credit-Risk-Analysis/tables/7%20-%20Does%20Having%20a%20Past%20Default%20Increase%20Default%20Risk.png?raw=true)
 ---
 ### **8️⃣ Do High Interest Rates Lead to More Defaults?**
 **Why This Matters:** If higher interest rates lead to higher default rates, lenders might need to rethink their pricing models. Let's analyze if there's a strong correlation.
@@ -166,6 +170,7 @@ FROM credit_risk
 GROUP BY interest_rate_group
 ORDER BY default_rate DESC;
 ```
+![Do High Interest Rates Lead to More Defaults](https://github.com/Parkerjcow/personal_data_projects/blob/Credit-Risk-Analysis/tables/8%20-%20Do%20High%20Interest%20Rates%20Lead%20to%20More%20Defaults.png?raw=true)
 ---
 
 ## 🎯 Final Takeaways
