@@ -70,11 +70,11 @@ GROUP BY credit_history_group
 ORDER BY credit_history_group;
 ```
 ![How do credit scores correlate with default rates](https://github.com/Parkerjcow/personal_data_projects/blob/Credit-Risk-Analysis/tables/2-%20How%20do%20credit%20scores%20correlate%20with%20default%20rates.png?raw=true)
-## **Insights**
+## Insights
 - Borrowers with short credit history (0-4 years) default the most (22.72%).
 - Surprisingly, those with long credit history (15+ years) still default at 21.72% – almost the same as moderate history borrowers.
   
-### **Business Actions**
+### Business Actions
 - Simply having a long credit history doesn’t guarantee financial stability – lenders should look at other factors (income, past defaults).
 - Consider combining credit history with past repayment behavior for better risk assessment.
 - New borrowers (short credit history) should be monitored closely before receiving high loan amounts.
@@ -95,6 +95,16 @@ ORDER BY default_rate DESC;
 ```
 ![What loan types have the highest and lowest default rates](https://github.com/Parkerjcow/personal_data_projects/blob/Credit-Risk-Analysis/tables/3%20-%20What%20loan%20types%20have%20the%20highest%20and%20lowest%20default%20rates.png?raw=true)
 
+## Insights
+- Debt Consolidation loans have the highest default rate (28.59%) – borrowers taking out loans to pay off existing debt may already be financially struggling.
+- Medical loans (26.70%) have the second-highest default rate, likely due to unexpected medical expenses impacting income.
+- Venture (14.81%) and Education (17.22%) loans have the lowest default rates, possibly because they increase future income potential.
+  
+### Business Actions
+- Debt consolidation loans should require stricter credit evaluations before approval.
+- Consider offering longer repayment periods or flexible plans for medical loans to reduce risk.
+- Education and venture loans should have competitive interest rates, as they are lower-risk.
+  
 ## **📌 Section 2: Customer Demographics & Risk Assessment**
 ### **4️⃣ Which income groups are more likely to default?**
 **Why This Matters:** Do lower-income borrowers struggle more with loan repayment? Let's find out
