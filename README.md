@@ -71,7 +71,6 @@ GROUP BY loan_intent
 ORDER BY default_rate DESC;
 
 ```
----
 
 ## **📌 Section 2: Customer Demographics & Risk Assessment**
 ### **4️⃣ Which income groups are more likely to default?**
@@ -112,7 +111,6 @@ FROM credit_risk
 GROUP BY employment_status
 ORDER BY total_borrowers DESC;
 ```
----
 
 ## **📌 Section 3: What Are the Most Common Risk Factors for Default?**
 ### **6️⃣ How Does Credit History Length Impact Default Rates?**
