@@ -118,10 +118,6 @@ ORDER BY total_borrowers DESC;
 ## **📌 Section 3: What Are the Most Common Risk Factors for Default?**
 ### **6️⃣ How Does Credit History Length Impact Default Rates?**
 **Why This Matters:** A borrower's credit history length **could be a key indicator of financial responsibility**. But is a short credit history **always riskier**? Let’s find out.  
-
-🔹 **SQL Query:** Categorize borrowers by **credit history length** and analyze their **default rates**.  
-🔹 **Tableau:** Bar chart comparing **default rates** across different credit history groups.  
-
 ```sql
 -- Categorizing Borrowers by Credit History Length & Computing Default Rate
 SELECT 
