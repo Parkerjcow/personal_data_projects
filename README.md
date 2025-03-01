@@ -43,6 +43,7 @@ SELECT
     ROUND((COUNT(*) FILTER (WHERE loan_status =1) * 100.0 / COUNT(*)), 2) AS default_rate
 FROM credit_risk;
 ```
+---
 ### **2️⃣ How do credit scores correlate with default rates?**
 **Why This Matters:** If lower credit scores = higher default rates, lenders can adjust loan terms accordingly 
 -- Categorizing credit history length
@@ -61,6 +62,7 @@ FROM credit_risk
 GROUP BY credit_history_group
 ORDER BY credit_history_group;
 ```
+---
 ### **3️⃣ What loan types have the highest and lowest default rates?**
 **Why This Matters:** Some loan types are riskier than others. Knowing which ones have higher default rates can help in setting better loan policies.
 ```sql
@@ -75,6 +77,7 @@ GROUP BY loan_intent
 ORDER BY default_rate DESC;
 
 ```
+---
 
 ## **📌 Section 2: Customer Demographics & Risk Assessment**
 ### **4️⃣ Which income groups are more likely to default?**
@@ -95,6 +98,7 @@ FROM credit_risk
 GROUP BY income_group
 ORDER BY total_borrowers DESC;
 ```
+---
 ### **5️⃣ How does employment status impact loan repayment?**
 **Why This Matters:** Does having a stable job reduce the chances of default? Let’s check.
 ```sql
@@ -114,6 +118,7 @@ FROM credit_risk
 GROUP BY employment_status
 ORDER BY total_borrowers DESC;
 ```
+---
 
 ## **📌 Section 3: What Are the Most Common Risk Factors for Default?**
 ### **6️⃣ How Does Credit History Length Impact Default Rates?**
@@ -137,6 +142,7 @@ FROM credit_risk
 GROUP BY credit_history_group
 ORDER BY default_rate DESC;
 ```
+---
 ### **7️⃣ Does Having a Past Default Increase Default Risk?**
 **Why This Matters:** If a borrower has defaulted before, should a lender trust them with another loan? Does past behavior predict future financial habits?
 ```sql
@@ -150,6 +156,7 @@ FROM credit_risk
 GROUP BY past_default
 ORDER BY default_rate DESC;
 ```
+---
 ### **8️⃣ Do High Interest Rates Lead to More Defaults?**
 **Why This Matters:** If higher interest rates lead to higher default rates, lenders might need to rethink their pricing models. Let's analyze if there's a strong correlation.
 ```sql
@@ -167,6 +174,7 @@ FROM credit_risk
 GROUP BY interest_rate_group
 ORDER BY default_rate DESC;
 ```
+---
 
 ## 🎯 Final Takeaways
 ### 🔥 So, Who Defaults and Why?
