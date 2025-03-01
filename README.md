@@ -2,9 +2,6 @@
 
 🚀 **Uncovering the Hidden Patterns Behind Loan Defaults Using SQL & Data Analytics**  
 
----
-
-## 📊 Project Overview  
 Ever wondered **who is most likely to default on a loan?** What factors contribute the most to **financial risk?** In this project, we analyze **credit risk data** to find out.  
 
 Using PostgreSQL, we break down key **borrower behaviors**, **income levels**, **credit history**, and **loan interest rates** to reveal **what drives loan defaults** and **how lenders can make smarter decisions.**  
