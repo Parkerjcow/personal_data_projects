@@ -138,7 +138,7 @@ GROUP BY credit_history_group
 ORDER BY default_rate DESC;
 ```
 ### **7️⃣ Does Having a Past Default Increase Default Risk?**
-💡 **Why This Matters:**If a borrower has defaulted before, should a lender trust them with another loan? Does past behavior predict future financial habits?
+💡 **Why This Matters:** If a borrower has defaulted before, should a lender trust them with another loan? Does past behavior predict future financial habits?
 ```sql
 -- Analyzing past default impact on future repayment
 SELECT 
@@ -151,7 +151,7 @@ GROUP BY past_default
 ORDER BY default_rate DESC;
 ```
 ### **8️⃣ Do High Interest Rates Lead to More Defaults?**
-💡 **Why This Matters:**If higher interest rates lead to higher default rates, lenders might need to rethink their pricing models. Let's analyze if there's a strong correlation.
+💡 **Why This Matters:** If higher interest rates lead to higher default rates, lenders might need to rethink their pricing models. Let's analyze if there's a strong correlation.
 ```sql
 -- Analyzing default rates across interest rate categories
 SELECT 
