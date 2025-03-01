@@ -44,7 +44,7 @@ FROM credit_risk;
 - 21.81% of borrowers defaulted on their loans.
 - While this isn't an extreme default rate, 1 in 5 loans is still a significant risk for lenders.
 - The default percentage gives lenders a baseline to assess how risky their loan portfolio is.
-- 
+  
 ### Business Actions
 
 - Financial institutions should ensure they have strong risk management strategies in place.
@@ -70,6 +70,14 @@ GROUP BY credit_history_group
 ORDER BY credit_history_group;
 ```
 ![How do credit scores correlate with default rates](https://github.com/Parkerjcow/personal_data_projects/blob/Credit-Risk-Analysis/tables/2-%20How%20do%20credit%20scores%20correlate%20with%20default%20rates.png?raw=true)
+## **Insights**
+- Borrowers with short credit history (0-4 years) default the most (22.72%).
+- Surprisingly, those with long credit history (15+ years) still default at 21.72% – almost the same as moderate history borrowers.
+  
+### **Business Actions**
+- Simply having a long credit history doesn’t guarantee financial stability – lenders should look at other factors (income, past defaults).
+- Consider combining credit history with past repayment behavior for better risk assessment.
+- New borrowers (short credit history) should be monitored closely before receiving high loan amounts.
 ---
 ### **3️⃣ What loan types have the highest and lowest default rates?**
 **Why This Matters:** Some loan types are riskier than others. Knowing which ones have higher default rates can help in setting better loan policies.
