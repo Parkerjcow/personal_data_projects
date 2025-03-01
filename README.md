@@ -13,6 +13,15 @@ We analyze **borrower behavior**, **credit history**, **income levels**, and **i
 
 ---
 
+# **Business Questions & Analysis Approach**
+The project is divided into three main sections, each addressing key business concerns.
+
+### 🔹 **A Few Key Business Questions Answered**
+✅ What percentage of applicants default on their loans?  
+✅ Which factors contribute most to default risk?  
+✅ How do income, employment, and past defaults impact repayment?  
+✅ Are high-interest loans more likely to default?  
+
 ## 📌 SQL Table Structure
 We begin by creating the **credit risk analysis table** to hold the dataset:
 
@@ -32,9 +41,6 @@ CREATE TABLE credit_risk (
     cb_person_cred_hist_length INT
 );
 ```
-# **Business Questions & Analysis Approach**
-The project is divided into three main sections, each addressing key business concerns.
-
 ---
 
 ## **📌 Section 1: Credit Risk & Loan Performance**
