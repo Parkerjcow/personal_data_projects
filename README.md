@@ -19,6 +19,7 @@ Using PostgreSQL, we break down key **borrower behaviors**, **income levels**, *
 We’ve divided this analysis into **three main sections**—each tackling critical questions that financial institutions and lenders would care about.  
 ---
 
+
 ## **📌 Section 1: Credit Risk & Loan Performance**
 ### **1️⃣ What percentage of applicants default on their loans?**
 **Why This Matters:** Understanding the overall **default rate** helps lenders measure **risk exposure** and improve decision-making.  
@@ -72,6 +73,7 @@ ORDER BY default_rate DESC;
 
 ```
 
+
 ## **📌 Section 2: Customer Demographics & Risk Assessment**
 ### **4️⃣ Which income groups are more likely to default?**
 **Why This Matters:** Do lower-income borrowers struggle more with loan repayment? Let's find out
@@ -111,6 +113,7 @@ FROM credit_risk
 GROUP BY employment_status
 ORDER BY total_borrowers DESC;
 ```
+
 
 ## **📌 Section 3: What Are the Most Common Risk Factors for Default?**
 ### **6️⃣ How Does Credit History Length Impact Default Rates?**
