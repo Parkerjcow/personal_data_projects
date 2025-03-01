@@ -1,51 +1,35 @@
-# 📌 Who Defaults and Why - Credit Risk Analysis
+# Who Defaults and Why - Credit Risk Analysis
 
-🚀 **A deep dive into loan defaults, credit risk, and financial decision-making using SQL & Data Analytics.**  
-
----
-
-## 📊 Project Overview
-This project explores **loan default risk factors** using SQL and PostgreSQL.  
-We analyze **borrower behavior**, **credit history**, **income levels**, and **interest rates** to uncover key **patterns that lead to loan defaults**.  
-
-**📌 Tools Used:** PostgreSQL (PGAdmin4), SQL  
-**📌 Data Source:** [Credit Risk Dataset](https://www.kaggle.com/datasets/laotse/credit-risk-dataset)
+🚀 **Uncovering the Hidden Patterns Behind Loan Defaults Using SQL & Data Analytics**  
 
 ---
 
-# **Business Questions & Analysis Approach**
-The project is divided into three main sections, each addressing key business concerns.
+## 📊 Project Overview  
+Ever wondered **who is most likely to default on a loan?** What factors contribute the most to **financial risk?** In this project, we analyze **credit risk data** to find out.  
 
-### 🔹 **A Few Key Business Questions Answered**
+Using PostgreSQL, we break down key **borrower behaviors**, **income levels**, **credit history**, and **loan interest rates** to reveal what drives loan defaults and how lenders can make smarter decisions.  
+
+### 🔹 **Key Questions We Answer**
 ✅ What percentage of applicants default on their loans?  
 ✅ Which factors contribute most to default risk?  
 ✅ How do income, employment, and past defaults impact repayment?  
 ✅ Are high-interest loans more likely to default?  
 
-## 📌 SQL Table Structure
-We begin by creating the **credit risk analysis table** to hold the dataset:
+📌 **Tools Used:** PostgreSQL (PGAdmin4), SQL  
+📌 **Data Source:** [Credit Risk Dataset] *(Include link if public)*  
 
-```sql
-CREATE TABLE credit_risk (
-    person_age INT,
-    person_income NUMERIC,
-    person_home_ownership VARCHAR(20),
-    person_emp_length INT,
-    loan_intent VARCHAR(20),
-    loan_grade VARCHAR(1),
-    loan_amnt NUMERIC,
-    loan_int_rate NUMERIC,
-    loan_status INT,
-    loan_percent_income NUMERIC,
-    cb_person_default_on_file VARCHAR(1),
-    cb_person_cred_hist_length INT
-);
-```
+---
+
+# **📌 Business Questions & Analysis Approach**
+We’ve divided this analysis into **three main sections**—each tackling critical questions that financial institutions and lenders would care about.  
+
 ---
 
 ## **📌 Section 1: Credit Risk & Loan Performance**
 ### **1️⃣ What percentage of applicants default on their loans?**
-🔹 **SQL Query:** Calculate total loans vs. defaulted loans.  
+💡 **Why This Matters:** Understanding the overall **default rate** helps lenders measure **risk exposure** and improve decision-making.  
+
+🔹 **SQL Query:** Count total loans vs. total defaults.  
 🔹 **Tableau:** KPI Card + Default Rate Trend Analysis.  
 
 ```sql
