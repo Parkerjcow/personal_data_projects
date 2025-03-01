@@ -27,7 +27,7 @@ We’ve divided this analysis into **three main sections**—each tackling criti
 
 ## **📌 Section 1: Credit Risk & Loan Performance**
 ### **1️⃣ What percentage of applicants default on their loans?**
-💡 **Why This Matters:** Understanding the overall **default rate** helps lenders measure **risk exposure** and improve decision-making.  
+**Why This Matters:** Understanding the overall **default rate** helps lenders measure **risk exposure** and improve decision-making.  
 
 ```sql
 -- Find total number of loans
@@ -44,7 +44,7 @@ SELECT
 FROM credit_risk;
 ```
 ### **2️⃣ How do credit scores correlate with default rates?**
-💡 **Why This Matters:** If lower credit scores = higher default rates, lenders can adjust loan terms accordingly 
+**Why This Matters:** If lower credit scores = higher default rates, lenders can adjust loan terms accordingly 
 -- Categorizing credit history length
 
 ```sql
@@ -62,7 +62,7 @@ GROUP BY credit_history_group
 ORDER BY credit_history_group;
 ```
 ### **3️⃣ What loan types have the highest and lowest default rates?**
-💡 **Why This Matters:** Some loan types are riskier than others. Knowing which ones have higher default rates can help in setting better loan policies.
+**Why This Matters:** Some loan types are riskier than others. Knowing which ones have higher default rates can help in setting better loan policies.
 ```sql
 -- Calculate default rate per loan type
 SELECT 
@@ -78,7 +78,7 @@ ORDER BY default_rate DESC;
 
 ## **📌 Section 2: Customer Demographics & Risk Assessment**
 ### **4️⃣ Which income groups are more likely to default?**
-💡 **Why This Matters:** Do lower-income borrowers struggle more with loan repayment? Let's find out
+**Why This Matters:** Do lower-income borrowers struggle more with loan repayment? Let's find out
 ```sql
 -- Categorizing income groups & calculating default rate
 SELECT 
@@ -96,7 +96,7 @@ GROUP BY income_group
 ORDER BY total_borrowers DESC;
 ```
 ### **5️⃣ How does employment status impact loan repayment?**
-💡 **Why This Matters:** Does having a stable job reduce the chances of default? Let’s check.
+**Why This Matters:** Does having a stable job reduce the chances of default? Let’s check.
 ```sql
 -- Categorizing Employment Length & calculating default rates
 SELECT 
@@ -117,7 +117,7 @@ ORDER BY total_borrowers DESC;
 
 ## **📌 Section 3: What Are the Most Common Risk Factors for Default?**
 ### **6️⃣ How Does Credit History Length Impact Default Rates?**
-💡 **Why This Matters:** A borrower's credit history length **could be a key indicator of financial responsibility**. But is a short credit history **always riskier**? Let’s find out.  
+**Why This Matters:** A borrower's credit history length **could be a key indicator of financial responsibility**. But is a short credit history **always riskier**? Let’s find out.  
 
 🔹 **SQL Query:** Categorize borrowers by **credit history length** and analyze their **default rates**.  
 🔹 **Tableau:** Bar chart comparing **default rates** across different credit history groups.  
@@ -138,7 +138,7 @@ GROUP BY credit_history_group
 ORDER BY default_rate DESC;
 ```
 ### **7️⃣ Does Having a Past Default Increase Default Risk?**
-💡 **Why This Matters:** If a borrower has defaulted before, should a lender trust them with another loan? Does past behavior predict future financial habits?
+**Why This Matters:** If a borrower has defaulted before, should a lender trust them with another loan? Does past behavior predict future financial habits?
 ```sql
 -- Analyzing past default impact on future repayment
 SELECT 
@@ -151,7 +151,7 @@ GROUP BY past_default
 ORDER BY default_rate DESC;
 ```
 ### **8️⃣ Do High Interest Rates Lead to More Defaults?**
-💡 **Why This Matters:** If higher interest rates lead to higher default rates, lenders might need to rethink their pricing models. Let's analyze if there's a strong correlation.
+**Why This Matters:** If higher interest rates lead to higher default rates, lenders might need to rethink their pricing models. Let's analyze if there's a strong correlation.
 ```sql
 -- Analyzing default rates across interest rate categories
 SELECT 
