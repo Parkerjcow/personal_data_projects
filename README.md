@@ -12,8 +12,8 @@ Using PostgreSQL, I break down key **borrower behaviors**, **income levels**, **
 ✅ How do income, employment, and past defaults impact repayment?  
 ✅ Are high-interest loans more likely to default?  
 
-📌 **Tools Used:** PostgreSQL (PGAdmin4), SQL  
-📌 **Data Source:** [Credit Risk Dataset](https://www.kaggle.com/datasets/laotse/credit-risk-dataset)
+**Tools Used:** PostgreSQL (PGAdmin4), SQL  
+**Data Source:** [Credit Risk Dataset](https://www.kaggle.com/datasets/laotse/credit-risk-dataset)
 
 # **Business Questions & Analysis Approach**
 
