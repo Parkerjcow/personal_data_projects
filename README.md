@@ -1,6 +1,6 @@
 # Who Defaults and Why - Credit Risk Analysis
 
-🚀 **Uncovering the Hidden Patterns Behind Loan Defaults Using SQL & Data Analytics**  
+**Uncovering the Hidden Patterns Behind Loan Defaults Using SQL & Data Analytics**  
 
 Ever wondered **who is most likely to default on a loan?** What factors contribute the most to **financial risk?** In this project, I analyze **credit risk data** to find out.  
 
