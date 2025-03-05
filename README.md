@@ -6,7 +6,7 @@ Ever wondered **who is most likely to default on a loan?** What factors contribu
 
 Using PostgreSQL, I break down key **borrower behaviors**, **income levels**, **credit history**, and **loan interest rates** to reveal **what drives loan defaults** and **how lenders can make smarter decisions.**  
 
-### 🔹 **A Few Key Questions I Answered**
+### **A Few Key Questions I Answered**
 ✅ What percentage of applicants default on their loans?  
 ✅ Which factors contribute most to default risk?  
 ✅ How do income, employment, and past defaults impact repayment?  
@@ -20,7 +20,7 @@ Using PostgreSQL, I break down key **borrower behaviors**, **income levels**, **
 We’ve divided this analysis into **three main sections**—each tackling critical questions that financial institutions and lenders would care about.  
 
 
-## **📌 Section 1: Credit Risk & Loan Performance**
+## **Section 1: Credit Risk & Loan Performance**
 ### **1️⃣ What percentage of applicants default on their loans?**
 **Why This Matters:** Understanding the overall **default rate** helps lenders measure **risk exposure** and improve decision-making.  
 
@@ -105,7 +105,7 @@ ORDER BY default_rate DESC;
 - Consider offering longer repayment periods or flexible plans for medical loans to reduce risk.
 - Education and venture loans should have competitive interest rates, as they are lower-risk.
   
-## **📌 Section 2: Customer Demographics & Risk Assessment**
+## **Section 2: Customer Demographics & Risk Assessment**
 ### **4️⃣ Which income groups are more likely to default?**
 **Why This Matters:** Do lower-income borrowers struggle more with loan repayment? Let's find out
 ```sql
@@ -171,7 +171,7 @@ ORDER BY total_borrowers DESC;
 - Consider offering better interest rates for borrowers with longer, more stable employment.
 - Financial institutions should target stable borrowers (6+ years employment) for premium loan offers.
   
-## **📌 Section 3: What Are the Most Common Risk Factors for Default?**
+## **Section 3: What Are the Most Common Risk Factors for Default?**
 ### **6️⃣ How Does Credit History Length Impact Default Rates?**
 **Why This Matters:** A borrower's credit history length **could be a key indicator of financial responsibility**. But is a short credit history **always riskier**? Let’s find out.  
 ```sql
