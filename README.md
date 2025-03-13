@@ -257,7 +257,7 @@ ORDER BY default_rate DESC;
 
 ---
 
-## 🎯 Final Takeaways - So, Who Defaults and Why?
+## Final Takeaways - So, Who Defaults and Why?
 This project has revealed critical insights that financial institutions can use to improve credit risk assessment and loan approval strategies.
 
 - Key Risk Factors for Loan Defaults:
