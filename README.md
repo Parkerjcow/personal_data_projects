@@ -1,5 +1,5 @@
 # Who Defaults and Why - Credit Risk Analysis
-
+![Top Risk Factors](https://github.com/Parkerjcow/personal_data_projects/blob/Credit-Risk-Analysis/Top%20Risk%20Factors%20for%20Defaults.png)
 **Uncovering the Hidden Patterns Behind Loan Defaults Using SQL & Data Analytics**  
 
 Ever wondered **who is most likely to default on a loan?** What factors contribute the most to **financial risk?** In this project, I analyze **credit risk data** to find out.  
