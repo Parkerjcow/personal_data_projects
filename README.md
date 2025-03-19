@@ -22,6 +22,7 @@ Short credit history borrowers default the most (22.72%) – lenders need better
 - Consider alternative repayment models to reduce defaults, such as graduated payment plans.
 
 **Tools Used:** PostgreSQL (PGAdmin4), SQL, Tableau
+
 **Data Source:** [Credit Risk Dataset](https://www.kaggle.com/datasets/laotse/credit-risk-dataset)
 
 **Tableau Dashboard** [Who Defaults and Why](https://github.com/Parkerjcow/personal_data_projects/blob/Credit-Risk-Analysis/Who%20Defaults%20and%20Why%20Dashboard.twbx)
