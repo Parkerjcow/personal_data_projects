@@ -6,11 +6,20 @@ Ever wondered **who is most likely to default on a loan?** What factors contribu
 
 Using PostgreSQL, I break down key **borrower behaviors**, **income levels**, **credit history**, and **loan interest rates** to reveal **what drives loan defaults** and **how lenders can make smarter decisions.**  
 
-### **A Few Key Questions I Answered**
-✅ What percentage of applicants default on their loans?  
-✅ Which factors contribute most to default risk?  
-✅ How do income, employment, and past defaults impact repayment?  
-✅ Are high-interest loans more likely to default?  
+## Takeaways - So, Who Defaults and Why?
+This project has revealed critical insights that financial institutions can use to improve credit risk assessment and loan approval strategies.
+
+- Key Risk Factors for Loan Defaults:
+Short credit history borrowers default the most (22.72%) – lenders need better screening.
+- Past defaults = 2x higher chance of defaulting again (37.81%) – stricter approval needed.
+- High-interest loans (15%+) default at 58.01% – lenders should reconsider pricing models.
+- Low-income borrowers default the most (39.71%), showing financial strain.
+- Stable employment (6+ years) significantly reduces default risk.
+
+## Business Recommendations:
+- Implement stricter loan approval processes for high-risk borrowers (low income, past defaults, short credit history).
+- Offer better loan terms to stable borrowers (low-risk customers).
+- Consider alternative repayment models to reduce defaults, such as graduated payment plans.
 
 **Tools Used:** PostgreSQL (PGAdmin4), SQL  
 **Data Source:** [Credit Risk Dataset](https://www.kaggle.com/datasets/laotse/credit-risk-dataset)
@@ -254,22 +263,3 @@ ORDER BY default_rate DESC;
 - High-interest borrowers are at extreme risk of default – lenders should reassess risk-based pricing strategies.
 - If possible, offering slightly lower interest rates to high-risk borrowers may reduce defaults and improve long-term repayment.
 - Consider refinancing options or offering lower interest rates to financially stable borrowers who initially took high-interest loans.
-
----
-
-## Final Takeaways - So, Who Defaults and Why?
-This project has revealed critical insights that financial institutions can use to improve credit risk assessment and loan approval strategies.
-
-- Key Risk Factors for Loan Defaults:
-Short credit history borrowers default the most (22.72%) – lenders need better screening.
-- Past defaults = 2x higher chance of defaulting again (37.81%) – stricter approval needed.
-- High-interest loans (15%+) default at 58.01% – lenders should reconsider pricing models.
-- Low-income borrowers default the most (39.71%), showing financial strain.
-- Stable employment (6+ years) significantly reduces default risk.
-
-## Business Recommendations:
-- Implement stricter loan approval processes for high-risk borrowers (low income, past defaults, short credit history).
-- Offer better loan terms to stable borrowers (low-risk customers).
-- Consider alternative repayment models to reduce defaults, such as graduated payment plans.
-
-
